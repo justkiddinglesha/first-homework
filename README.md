@@ -1,4 +1,19 @@
-#Учебная сборка Loftschool (выпускной проект №1) 
+Author: Burdyuk Alexey
+
+Description:
+   Gulp tasks:
+   
+       -SASS,PUG Compile;
+       
+       -normilize.css
+       
+       -css,js minimise
+       
+       -copying fonts from source to final build folder
+       
+       -creating sprites from your images and svg's
+       
+       -browsersync
 
 Stack:
  - Gulp 4.0
