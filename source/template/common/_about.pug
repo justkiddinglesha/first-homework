@@ -1,0 +1,29 @@
+.about
+	.about__svg-background
+		svg
+			use(xlink:href='assets/img/sprite.svg#about_header')
+	h1.title что обо мне<br>говорят
+	.about__reviews
+		.review__item
+			img(src='assets/img/avatardim.png', alt='Фотография человека', class='item__img')
+			p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+			span Ковальчук Дмитрий
+			p.descr — основатель Loftschool
+		.review__item
+			img(src='assets/img/avatardum.png', alt='Фотография человека', class='item__img')
+			p Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+			span Зар Захаров
+			p.descr — преподаватель
+	.about__contact-form
+		form
+			h2 Связаться со мной
+			input(type='text', placeholder='Имя')
+			input(type='email', placeholder='Email')
+			textarea(placeholder='Ваше сообщение')
+			.form__buttons
+				button(type='submit') Отправить
+				button(type='reset') Очистить
+	.about__arrow-down
+		a(href='#', class='arrow-down__link')
+			svg.link__image
+				use(xlink:href='assets/img/sprite.svg#portf_arrow_up')

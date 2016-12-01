@@ -1,7 +1,6 @@
 - var svgPath = "assets/img/sprite.svg"
 
 
-mixin svg(svgName, className, title)
+mixin svg(svgName, className)
 	svg(class = className)
-		title = title
 		use(xlink:href=svgPath+'#'+svgName)

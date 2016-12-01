@@ -1,5 +1,95 @@
-body {
-  margin: 0;
+html {
+	width: 100%;
+	height: 100%;
 }
 
-@import 'common/greating';
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'robotom';
+	src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'robotor';
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'sansus';
+	src: url('../fonts/Sansus-Webissimo-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'robotoi';
+	src: url('../fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'robotobi';
+	src: url('../fonts/Roboto-BoldItalic.ttf');
+}
+
+@font-face {
+	font-family: 'robotol';
+	src: url('../fonts/Roboto-Light.ttf');
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+ul {
+	padding: 0;
+	margin:0;
+
+	li {
+		list-style: none;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.container-big {
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+
+@import 'common/header.scss';
+@import 'common/portfolio.scss';
+@import 'common/about.scss';
+@import 'common/footer.scss';
+@import 'common/_mixins.scss';

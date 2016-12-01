@@ -1,0 +1,33 @@
+header.header
+	.container-big
+		.header__top
+			.header__icons
+				ul.icons
+					li.icons__item
+						a.icons__link.icons__link_vk
+							+svg('vk', 'icon-vk')
+					li.icons__item
+						a.icons__link.icons__link_github
+							+svg('github', 'icon-git')
+					li.icons__item
+						a.icons__link.icons__link_in
+							+svg('in', 'icon-in')
+			.header__menu
+				a(href='#', class='menu__link')
+					span
+	.header__svg
+		svg(class='portfolio', preserveaspectratio='none')
+			use(xlink:href='assets/img/sprite.svg#portfolio_header')
+	.personal__info
+		.avatar__wrapper
+			img(src='assets/img/avatar.jpg', class='avatar__image' alt='Мой аватар')
+		.avatar__caption
+			h3 Бурдюк Алексей
+			p Личный сайт веб разработчика
+	.header__arrow-down
+		a(href='#', class='arrow-down__link')
+			svg.link__image
+				use(xlink:href='assets/img/sprite.svg#arrow_down')
+	.header__triangle
+		svg.triangle(viewbox='0 0 1000 85')
+			use(xlink:href='assets/img/sprite.svg#tri')
