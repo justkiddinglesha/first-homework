@@ -7,120 +7,88 @@
 .footer__top {
 	background: rgba(55, 62, 66, 0.85);
 	padding: 30px 0;
-	&:before,
-	&:after {
-    content: "";
-    display: table;
-    }
-	&:after {
-	clear: both;
-	}
+	@include clearfix
 }
 
 .footer__bottom {
 	text-align: center;
 	background: rgba(108, 156, 90, 0.85);
-	padding: 10px 0;
-	span {
-		font-size: 15px;
-		font-family: 'robotol';
-		color: #fff;
-	}
+	padding: 10px 0;	
 }
 
-.footer-top__caption,
-.footer-top__navigation,
-.footer-top__quote {
+.footer__copyright {
+	font-size: 15px;
+	font-family: 'roboto-light';
+	color: #fff;
+}
+
+.footer__caption,
+.footer__navigation,
+.footer__quote {
 	width: 33.33%;
 	padding: 0 30px;
 	float: left;
 }
 
-.footer-top__navigation {
+.footer__navigation {
 	border-right: 1px solid rgba(255,255,255,0.2);
 	border-left: 1px solid rgba(255,255,255,0.2);
 }
 
-.footer-top__quote {
+.footer__quote {
 	border-right: none;
 }
 
-.footer-top__caption p {
+.footer__caption-text {
 	font-size: 16px;
-	font-family: 'robotol';
+	font-family: 'roboto-light';
 	color: #fff;
 	margin: 0;
 }
 
-nav.navigation {
+.navigation {
 	display: block;
 	margin-bottom: 30px;
-	li.item {
-		display: inline-block;
-		vertical-align: middle;
-		margin-left: 30px;
-		a {
-			color: #fff;
-			font-size: 16px;
-			font-family: 'robotom';
-			cursor: pointer;
-		}
-	}
-	li:first-child {
-		margin-left: 0;
-	}
 }
 
-.footer-top__navigation {
-	.header__icons {
-		ul.icons {
-			li.icons__item {
-				a.icons__link.icons__link_vk {
-					&:hover svg.icon-vk{
-						fill: #fff;
-					}
-					svg.icon-vk {
-						fill: #9b9ea0;
-					}
-				}
-				a.icons__link.icons__link_github {
-					&:hover svg.icon-git{
-						fill: #fff;
-					}
-					svg.icon-git {
-						fill: #9b9ea0;
-					}
-				}
-				a.icons__link.icons__link_in {
-					&:hover svg.icon-in{
-						fill: #fff;
-					}
-					svg.icon-in {
-						fill: #9b9ea0;
-					}
-				}
-			}
-		}
-	}
+.item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
 }
 
-.footer-top__quote {
-	blockquote {
-		margin: 0;
-		p {
-			font-size: 16px;
-			color: rgba(255,255,255,0.5);
-			margin: 0 0 10px 0;
-			font-family: 'robotol';
-			font-style: italic;
-		}
-		span {
-			font-family: 'robotobi';
-			color: rgba(255,255,255,0.5);
-		}
-	}
+.item:first-child {
+	margin-left: 0;
 }
 
+.item__link {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'roboto-medium';
+	cursor: pointer;
+}
 
+.icons__image_darkened {
+	fill: #9b9ea0;
+}
 
+.icons__image_darkened:hover {
+	fill: #fff;
+}
 
+.quote {
+	margin: 0;		
+}
+
+.quote__text {
+	font-size: 16px;
+	color: rgba(255,255,255,0.5);
+	margin: 0 0 10px 0;
+	font-family: 'roboto-light';
+	font-style: italic;
+}
+
+.quote__author {
+	font-family: 'roboto-bold-italic';
+	color: rgba(255,255,255,0.5);
+}
