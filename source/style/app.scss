@@ -1,5 +1,7 @@
-body {
-  margin: 0;
-}
-
-@import 'common/greating';
+@import 'common/header.scss';
+@import 'common/portfolio.scss';
+@import 'common/about.scss';
+@import 'common/footer.scss';
+@import 'common/fonts.scss';
+@import 'common/base.scss';
+@import 'common/_mixins.scss';

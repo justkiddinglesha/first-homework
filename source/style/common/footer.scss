@@ -1,0 +1,94 @@
+.footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+.footer__top {
+	background: rgba(55, 62, 66, 0.85);
+	padding: 30px 0;
+	@include clearfix
+}
+
+.footer__bottom {
+	text-align: center;
+	background: rgba(108, 156, 90, 0.85);
+	padding: 10px 0;	
+}
+
+.footer__copyright {
+	font-size: 15px;
+	font-family: 'roboto-light';
+	color: #fff;
+}
+
+.footer__caption,
+.footer__navigation,
+.footer__quote {
+	width: 33.33%;
+	padding: 0 30px;
+	float: left;
+}
+
+.footer__navigation {
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-left: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer__quote {
+	border-right: none;
+}
+
+.footer__caption-text {
+	font-size: 16px;
+	font-family: 'roboto-light';
+	color: #fff;
+	margin: 0;
+}
+
+.navigation {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+.item:first-child {
+	margin-left: 0;
+}
+
+.item__link {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'roboto-medium';
+	cursor: pointer;
+}
+
+.icons__image_darkened {
+	fill: #9b9ea0;
+}
+
+.icons__image_darkened:hover {
+	fill: #fff;
+}
+
+.quote {
+	margin: 0;		
+}
+
+.quote__text {
+	font-size: 16px;
+	color: rgba(255,255,255,0.5);
+	margin: 0 0 10px 0;
+	font-family: 'roboto-light';
+	font-style: italic;
+}
+
+.quote__author {
+	font-family: 'roboto-bold-italic';
+	color: rgba(255,255,255,0.5);
+}

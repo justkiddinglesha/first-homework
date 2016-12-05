@@ -1,0 +1,222 @@
+@import 'common/_mixins.scss';
+
+.header {
+	background-image: url('../img/water.jpg');
+	background-size: cover;
+	min-height: 600px;
+	position: relative;
+	background-position: center center;
+	padding-top: 28px;
+	height: 100vh;
+}
+
+.header:after {
+	background: transparent;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.1) 50%);
+	background: -o-linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.1) 50%);
+	background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.1) 50%);
+	content: '';
+	display: block;
+	height: 50%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.header__top {
+	position: relative;
+	height: 36px;
+	z-index: 1;
+	padding: 0 30px;
+	margin: 0 auto;
+	@include clearfix
+}
+
+.social-icons {
+	float: left;
+	height: 35px;
+}
+
+.icons {
+	padding: 0;
+}
+
+.icons__item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 25px;
+	width: 35px;
+	height: 26px;
+}
+
+.icons__link {
+	cursor: pointer;
+	display: block;
+}
+
+.icons__link:hover .icons__image {
+	fill: #4e8839;
+}
+
+.icons__item:first-child {
+	margin-left: 0;
+}
+
+.icons__image {
+	transition: all 0.3s;
+}
+
+.icons__image_vk {
+	fill: #fff;
+	height: 17px;
+	width: 31px;
+}
+
+.icons__image_github {
+	fill: #fff;
+	height: 22px;
+	width: 26px;
+}
+
+.icons__image_in {
+	fill: #fff;
+	height: 22px;
+	width: 24px;
+}
+
+.header__menu {
+	float: right;
+	position: relative;
+	height: 36px;
+	width: 35px;
+}
+
+.menu {
+	display: block;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: 3px;
+	right: 0px;  
+}
+
+.menu:hover .menu__image,
+.menu:hover .menu__image:after,
+.menu:hover .menu__image:before {
+	background-color: #4e8839;
+}
+
+.menu__image:after, .menu__image:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+.menu__image:after {
+	top: 19px;
+}
+
+.menu__image { 
+	position: relative;
+	display: block;
+}
+
+.menu__image, .menu__image:after, .menu__image:before {
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+	border-radius: 2px;
+}
+
+.header__svg {
+	width: 1200px;
+	height: 350px;
+	margin: 0 auto;
+	z-index: 3;
+	position: relative;
+}
+
+.portfolio {
+	width: 100%;
+	height: 100%;
+	fill: rgba(255,255,255, 0.12);
+}
+
+.header__info {
+	z-index: 5;
+	position: absolute;
+	text-align: center;
+	top: 20%;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+}
+
+.avatar {
+	display: inline-block;
+	width: 141px;
+	height: 141px;
+	overflow: hidden;
+	border-radius: 50% 50%;
+}
+
+.avatar__image {
+	margin-left: -20px;
+}
+
+.caption__title {
+	font-size: 35px;
+	color: #fff;
+	margin-bottom: 0;
+	margin-top: 20px;
+	line-height: 37px;
+	font-family: 'roboto-medium';
+	font-weight: normal
+}
+
+.caption__description {
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+	margin: 10px 0 0 0;
+	font-family: 'roboto-regular';
+}
+
+.arrow-down {
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	margin-left: -13px;
+	width: 26px;
+	height: 20px;
+	z-index: 3;
+}
+
+.arrow-down__link {
+	display: inline-block;
+}
+
+.arrow-down__link:hover .arrow-down__image {
+	fill: #fff;
+}
+
+.arrow-down__image {
+	width: 26px;
+	height: 16px;
+	fill: rgba(255,255,255,0.7);
+}
+
+.header__triangle {
+	width: 100%;
+	position: absolute;
+	bottom: -5px; 
+}
+
+.triangle {
+	width: 100%;
+	fill: #fff;
+}

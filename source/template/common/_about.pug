@@ -1,0 +1,29 @@
+.about
+	svg.about__title-background
+		use(xlink:href='assets/img/sprite.svg#about_header')
+	.about__title-wrapper
+		h1.about__title что обо мне говорят
+	.about__reviews
+		.review-item
+			img(src='assets/img/avatardim.png', alt='Фотография человека', class='review-item__image')
+			p.review-item__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+			span.review-item__author Ковальчук Дмитрий
+			p.review-item__author-post — основатель Loftschool
+		.review-item
+			img(src='assets/img/avatardum.png', alt='Фотография человека', class='review-item__image')
+			p.review-item__text Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+			span.review-item__author Зар Захаров
+			p.review-item__author-post — преподаватель
+	.about__contact-form
+		form.contact-form
+			h2.contact-form__title Связаться со мной
+			input(type='text', placeholder='Имя', class='contact-form__input')
+			input(type='email', placeholder='Email', class='contact-form__input')
+			textarea(placeholder='Ваше сообщение', class='contact-form__textarea')
+			.contact-form__buttons
+				button(type='submit', class='button button-left') Отправить
+				button(type='reset', class='button button-right') Очистить
+	.arrow-up
+		a(href='#', class='arrow-up__link')
+			svg.arrow-up__image
+				use(xlink:href='assets/img/sprite.svg#portf_arrow_up')

@@ -1,0 +1,28 @@
+- var icons = ['vk', 'github', 'in']
+header.header
+	.header__top
+		.social-icons
+			ul.icons
+				each icon in icons
+					li.icons__item
+						a.icons__link
+							+svg(icon, 'icons__image icons__image_' + icon)
+		.header__menu
+			a(href='#', class='menu')
+				span.menu__image
+	.header__svg
+		svg(class='portfolio', preserveaspectratio='none')
+			use(xlink:href='assets/img/sprite.svg#portfolio_header')
+	.header__info
+		.avatar
+			img(src='assets/img/avatar.jpg', class='avatar__image' alt='Мой аватар')
+		.caption
+			h3.caption__title Бурдюк Алексей
+			p.caption__description Личный сайт веб разработчика
+	.arrow-down
+		a(href='#', class='arrow-down__link')
+			svg.arrow-down__image
+				use(xlink:href='assets/img/sprite.svg#arrow_down')
+	.header__triangle
+		svg.triangle(viewbox='0 0 1000 85')
+			use(xlink:href='assets/img/sprite.svg#tri')
