@@ -1,0 +1,50 @@
+- var frontend = ['HTML5', 'CSS3', 'Javascript & JQuery']
+- var backend = ['PHP', 'mySQL', 'Node.js & npm', 'Mongo.db']
+- var workflow = ['Git', 'Gulp', 'Bower']
+.about-me
+	.about-me__info
+		.about-me__info-title-wrapper
+			svg.about-me__info-title-background(reserveAspectRatio="none")
+				use(xlink:href='assets/img/sprite.svg#about_header')
+			h1.about-me__info-title Обо мне
+		.about-me__info-description
+			img(class='about-me__profile-photo',src='assets/img/avatar_about.jpg')
+			h2.about-me__info-description-title Кто я
+			p.about-me__info-description-text
+				|Я веб разработчик из Минска. Мне 22 года.
+				|Я занимаюсь разработкой современных сайтов и приложений. 
+				|Мне нравится делать интересные и современные проекты. 
+			p.about-me__info-description-text
+				|Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+				|Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+	.about-me__skills
+		.about-me__skills-title-wrapper
+			h3.about-me__skills-title Чем я могу быть вам полезен
+		p.about-me__skills-text
+			|Больше всего меня привлекет Frontend разработка, но я также знаком
+			|и могу решать не сложные задачи на Backend. Но давайте по порядку.
+		.about-me__skills-diagrams
+			.about-me__skills-diagrams-frontend
+				h3.about-me__skills-diagrams-title Frontend
+				each skill in frontend
+					.diagram
+						svg.diagram__circle
+							circle(r='50', cx='60', cy='60', stroke='#dfdcd5', fill='none')
+							circle.diagram__circle-sector(r='50', cx='60', cy='60', stroke='#74a163', transform='rotate(-90 60 60)')
+						span.diagram__name #{skill}
+			.about-me__skills-diagrams-backend
+				h3.about-me__skills-diagrams-title Backend
+				each skill in backend
+					.diagram
+						svg.diagram__circle
+							circle(r='50', cx='60', cy='60', stroke='#dfdcd5', fill='none')
+							circle.diagram__circle-sector(r='50', cx='60', cy='60', stroke='#74a163', transform='rotate(-90 60 60)')
+						span.diagram__name #{skill}
+			.about-me__skills-diagrams-workflow
+				h3.about-me__skills-diagrams-title Workflow
+				each skill in workflow
+					.diagram
+						svg.diagram__circle
+							circle(r='50', cx='60', cy='60', stroke='#dfdcd5', fill='none')
+							circle.diagram__circle-sector(r='50', cx='60', cy='60', stroke='#74a163', transform='rotate(-90 60 60)')
+						span.diagram__name #{skill}

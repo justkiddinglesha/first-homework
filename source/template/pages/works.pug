@@ -2,7 +2,10 @@ extends ../_template
 
 block variables
 	- var title = 'Works'
-
+	- var left = 'triangle__left_white'
+	- var right = 'triangle__right'
 block content
+	include ../common/_header.pug
 	include ../common/_portfolio
 	include ../common/_about
+	include ../common/_footer.pug

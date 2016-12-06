@@ -1,0 +1,27 @@
+extends ../_template
+
+block variables
+	- var title = 'Welcome'
+block content
+	- var icons = ['vk', 'github', 'in']
+	.welcome
+		.welcome__top-line
+			a.welcome__login-link Авторизоваться
+		form.welcome__form
+			.avatar
+				img(src='assets/img/avatar.jpg', class='avatar__image' alt='Мой аватар')
+			.caption
+				h3.caption__title Бурдюк Алексей
+				p.caption__description Личный сайт веб разработчика
+			.social-icons_centered
+				ul.icons
+					each icon in icons
+						li.icons__item
+							a.icons__link
+								+svg(icon, 'icons__image_dark icons__image_' + icon)
+			.welcome__form-buttons
+				button.form-button Мои работы
+				button.form-button Обо мне
+				button.form-button Блог
+		.welcome__copyright 
+			|© Бурдюк Алексей | создано с любовью в LoftSchool | 2016

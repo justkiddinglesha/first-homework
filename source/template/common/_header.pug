@@ -24,5 +24,6 @@ header.header
 			svg.arrow-down__image
 				use(xlink:href='assets/img/sprite.svg#arrow_down')
 	.header__triangle
-		svg.triangle(viewbox='0 0 1000 85')
-			use(xlink:href='assets/img/sprite.svg#tri')
+		svg.triangle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+			polygon(points='0,0   0,86   500.8,86   500.8,75.5', class="" + left)
+			polygon(points='1000,0   1000,86   500,86   500,75.5', class="" + right)
