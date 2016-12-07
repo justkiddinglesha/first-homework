@@ -6,22 +6,50 @@ block content
 	- var icons = ['vk', 'github', 'in']
 	.welcome
 		.welcome__top-line
-			a.welcome__login-link Авторизоваться
-		form.welcome__form
-			.avatar
-				img(src='assets/img/avatar.jpg', class='avatar__image' alt='Мой аватар')
-			.caption
-				h3.caption__title Бурдюк Алексей
-				p.caption__description Личный сайт веб разработчика
-			.social-icons.social-icons_centered
-				ul.icons
-					each icon in icons
-						li.icons__item
-							a.icons__link
-								+svg(icon, 'icons__image_dark icons__image_' + icon)
-			.welcome__form-links
-				a.form-link.form-link_work Мои работы
-				a.form-link.form-link_about Обо мне
-				a.form-link.form-link_blog Блог
+			button(onclick='rotate()', class='welcome__login-link') Авторизоваться
+		.flip-container#flip-toggle
+			.flipper
+				.front
+					form.welcome__form
+						.avatar
+							img(src='assets/img/avatar.jpg', class='avatar__image' alt='Мой аватар')
+						.caption
+							h3.caption__title Бурдюк Алексей
+							p.caption__description Личный сайт веб разработчика
+						.social-icons.social-icons_centered
+							ul.icons
+								each icon in icons
+									li.icons__item
+										a.icons__link
+											+svg(icon, 'icons__image_dark icons__image_' + icon)
+						.welcome__form-links
+							a.form-link.form-link_work Мои работы
+							a.form-link.form-link_about Обо мне
+							a.form-link.form-link_blog Блог
+				.back
+					.login
+						form.login__form
+							h2.main-title-min.main-title-min_login Авторизуйтесь
+							.input-wrapper
+								label.label-login
+									i.fa.fa-user
+								input(type='text', placeholder='Логин', class='input-login')
+							.input-wrapper
+								label.label-password
+									i.fa.fa-key
+								input(type='text', placeholder='Пароль', class='input-password')
+							.input-checkbox-wrapper
+								input(type='checkbox', id='people', class='input-checkbox')
+								label(for='people', class='label-checkbox')
+									span.label-text
+									|Я человек
+							span.not-robot Вы точно не робот?
+							input(type='radio', class='radio', id='yes', name='radio')
+							label(for='yes', class='label-for-radio') Да
+							input(type='radio', class='radio', id='no', name='radio')
+							label(for='no', class='label-for-radio') Не уверен
+							.form-buttons
+								a.main-link(onclick='rotate()') На главную
+								button(class='login-button', type='submit') Войти
 		.copyright 
 			|© Бурдюк Алексей | создано с любовью в LoftSchool | 2016

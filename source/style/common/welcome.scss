@@ -44,7 +44,7 @@
 
 .welcome__login-link {
 	border-radius: 20px;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	color: #fff;
 	cursor: pointer;
 	float: right;
@@ -52,11 +52,13 @@
 	font-size: 16px;
 	padding: 10px 25px;
 	transition: all 0.3s;
+	background: none;
+	outline: none;
 }
 
 .welcome__login-link:hover {
 	background: #4e8839;
-	border: 1px solid #729e19;
+	border: 2px solid #729e19;
 }
 
 .welcome__form {
@@ -132,4 +134,47 @@
 	width: 100%;
 	color: #fff;
 	text-align: center;
+}
+
+.flip-container {
+	perspective: 1000px;
+	min-width: 380px;
+	min-height: 374px;
+	position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    margin: -196px 0 0 -190px;
+}
+
+.flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 380px;
+	min-height: 374px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
 }
