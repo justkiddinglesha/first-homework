@@ -13,15 +13,15 @@ block content
 			.caption
 				h3.caption__title Бурдюк Алексей
 				p.caption__description Личный сайт веб разработчика
-			.social-icons_centered
+			.social-icons.social-icons_centered
 				ul.icons
 					each icon in icons
 						li.icons__item
 							a.icons__link
 								+svg(icon, 'icons__image_dark icons__image_' + icon)
-			.welcome__form-buttons
-				button.form-button Мои работы
-				button.form-button Обо мне
-				button.form-button Блог
-		.welcome__copyright 
+			.welcome__form-links
+				a.form-link.form-link_work Мои работы
+				a.form-link.form-link_about Обо мне
+				a.form-link.form-link_blog Блог
+		.copyright 
 			|© Бурдюк Алексей | создано с любовью в LoftSchool | 2016

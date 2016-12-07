@@ -1,0 +1,229 @@
+.login {
+	background-image: url('../img/water.jpg');
+	background-size: cover;
+	min-height: 600px;
+	position: relative;
+	background-position: center center;
+	height: 100vh;
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+
+.login:after {
+	background: transparent;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.1) 50%);
+	background: -o-linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.1) 50%);
+	background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.1) 50%);
+	content: '';
+	display: block;
+	height: 30%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.login:before {
+	background: transparent;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.35) 50%);
+	background: -o-linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.35) 50%);
+	background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.35) 50%);
+	content: '';
+	display: block;
+	height: 30%;
+	left: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.login__form-wrapper {
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -200px 0 0 -190px;
+}
+
+.login__form {
+	background: rgba(18, 38, 32, 0.6);
+	border-radius: 10px;
+	text-align: center;
+	width: 380px;
+	padding-top: 30px;
+	text-align: center;
+	position: relative;
+	@include clearfix;
+}
+
+.main-title-min_login {
+	color: #fff;
+}
+
+.main-title-min_login:after {
+	background: #fff;
+}
+
+.input-wrapper {
+	width: 100%;
+	padding: 0 20px;
+	position: relative;
+}
+
+.input-checkbox-wrapper {
+	margin-top: 15px;
+}
+
+.input-login,
+.input-password {
+	width: 100%;
+	border-radius: 25px;
+	border: none;
+	background: #fff;
+	height: 45px;
+	padding: 12px 0 10px 55px;
+	margin-top: 15px;
+	outline: none;
+}
+
+.input-checkbox {
+	width: 20px;
+	height: 21px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url('../img/sprite.png') left top;
+}
+
+.label-login,
+.label-password {
+	position: absolute;
+	top: 26px;
+	left: 40px;
+	font-size: 20px;
+	color: #c4cbcd;
+}
+
+.label-checkbox {
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.input-checkbox {
+    display:none;
+}
+.input-checkbox + .label-checkbox .label-text {
+    display:inline-block;
+    width:21px;
+    height:21px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/sprite.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.input-checkbox:checked + .label-checkbox .label-text {
+    background:url(../img/sprite.png) -21px top no-repeat;
+}
+
+.not-robot {
+	width: 100%;
+	display: block;
+	color: #fff;
+	margin: 15px 0;
+	font-family: 'roboto-medium';
+	font-size: 16px;
+}
+
+.radio {
+	vertical-align: top;
+	width: 17px;
+	height: 17px;
+	margin: 0 3px 0 0;
+}
+.radio + .label-for-radio {
+	cursor: pointer;
+}
+.radio:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+.radio:not(checked) + .label-for-radio {
+	position: relative;
+	padding: 0 30px 0 30px;
+}
+
+.radio:not(checked) + .label-for-radio:last-child {
+	padding: 0 0 0 30px;
+}
+.radio:not(checked) + .label-for-radio:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #FFF;
+}
+.radio:not(checked) + .label-for-radio:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #6c9c5a;
+	opacity: 0;
+	transition: all .2s;
+}
+.radio:checked + .label-for-radio:after {
+	opacity: 1;
+}
+
+.radio:checked + .label-for-radio {
+	color: #6c9c5a;
+}
+
+.label-for-radio {
+	color: #fff;
+	font-family: 'roboto-regular';
+	font-size: 16px;
+}
+
+.form-buttons {
+	margin-top: 20px;
+	@include clearfix;
+}
+
+.main-link,
+.login-button {
+	width: 50%;
+	float: left;
+	padding: 15px 0;
+	border: none;
+    background: #6c9c5a;
+    border-right: 2px solid #dee3e7;
+    font-size: 16px;
+    font-family: 'roboto-regular';
+    color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.main-link:hover,
+.login-button:hover {
+	background: #4e8839;
+}
+
+.login-button {
+	border-right: none;
+	border-bottom-right-radius: 10px;
+}
+
+.main-link {
+	border-bottom-left-radius: 10px;
+}

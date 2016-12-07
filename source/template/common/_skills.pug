@@ -6,10 +6,11 @@
 		.about-me__info-title-wrapper
 			svg.about-me__info-title-background(reserveAspectRatio="none")
 				use(xlink:href='assets/img/sprite.svg#about_header')
-			h1.about-me__info-title Обо мне
+			h1.main-title.main-title_top Обо мне
 		.about-me__info-description
-			img(class='about-me__profile-photo',src='assets/img/avatar_about.jpg')
-			h2.about-me__info-description-title Кто я
+			.about-me__profile-photo-wrapper
+				img(class='about-me__profile-photo',src='assets/img/avatar_about.jpg')
+			h2.main-title-min Кто я
 			p.about-me__info-description-text
 				|Я веб разработчик из Минска. Мне 22 года.
 				|Я занимаюсь разработкой современных сайтов и приложений. 
@@ -19,7 +20,7 @@
 				|Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
 	.about-me__skills
 		.about-me__skills-title-wrapper
-			h3.about-me__skills-title Чем я могу быть вам полезен
+			h3.main-title-min.main-title-min_top Чем я могу быть вам полезен
 		p.about-me__skills-text
 			|Больше всего меня привлекет Frontend разработка, но я также знаком
 			|и могу решать не сложные задачи на Backend. Но давайте по порядку.

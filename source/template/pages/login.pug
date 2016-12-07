@@ -1,0 +1,32 @@
+extends ../_template
+
+block variables
+    - var title = 'Login'
+block content
+    .login
+        .login__form-wrapper
+            form.login__form
+                h2.main-title-min.main-title-min_login Авторизуйтесь
+                .input-wrapper
+                    label.label-login
+                        i.fa.fa-user
+                    input(type='text', placeholder='Логин', class='input-login')
+                .input-wrapper
+                    label.label-password
+                        i.fa.fa-key
+                    input(type='text', placeholder='Пароль', class='input-password')
+                .input-checkbox-wrapper
+                    input(type='checkbox', id='people', class='input-checkbox')
+                    label(for='people', class='label-checkbox')
+                        span.label-text
+                        |Я человек
+                span.not-robot Вы точно не робот?
+                input(type='radio', class='radio', id='yes', name='radio')
+                label(for='yes', class='label-for-radio') Да
+                input(type='radio', class='radio', id='no', name='radio')
+                label(for='no', class='label-for-radio') Не уверен
+                .form-buttons
+                    a.main-link На главную
+                    button.login-button Войти
+        .copyright 
+            |© Бурдюк Алексей | создано с любовью в LoftSchool | 2016
