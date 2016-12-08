@@ -1,0 +1,29 @@
+- var icons = ['vk', 'github', 'in']
+header.header
+	.header__top
+		.social-icons
+			ul.icons
+				each icon in icons
+					li.icons__item
+						a.icons__link
+							+svg(icon, 'icons__image icons__image_' + icon)
+		.header__menu
+			a(href='#', class='menu')
+				span.menu__image
+	.header__info.header__info_blog
+		.avatar
+			img(src='assets/img/avatar.jpg', class='avatar__image' alt='Мой аватар')
+		.caption
+			.header__blog-title-wrapper
+				svg.header__blog-title-background(reserveAspectRatio="none")
+					use(xlink:href='assets/img/sprite.svg#blog_header')
+				h3.header__blog-title Блог
+			p.caption__description Статьи, которые я написал
+	.arrow-down
+		a(href='#', class='arrow-down__link')
+			svg.arrow-down__image
+				use(xlink:href='assets/img/sprite.svg#arrow_down')
+	.header__triangle
+		svg.triangle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+			polygon(points='0,0   0,86   500.8,86   500.8,75.5', class="" + left)
+			polygon(points='1000,0   1000,86   500,86   500,75.5', class="" + right)
