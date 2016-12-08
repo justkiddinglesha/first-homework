@@ -56,3 +56,56 @@ a {
 	padding: 0 30px;
 	margin: 0 auto;
 }
+
+.main-title {
+	font-family: 'sansus-regular';
+	font-size: 62px;
+	line-height: 62px;
+	color: #373e42;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 70px;
+	text-align: center;
+	position: relative;
+}
+
+.main-title:after {
+	display: block;
+	content: '';
+	width: 90px;
+	height: 3px;
+	background: #373e42;
+	margin: 0 auto;
+	position: relative;
+	top: 25px;
+}
+
+.main-title_top {
+	margin: 0;
+	line-height: 40px;
+}
+
+.main-title-min {
+	margin: 0 0 30px 0;
+	font-family: 'sansus-regular';
+	font-size: 35px;
+	color: #566358;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: center;
+}
+
+.main-title-min:after {
+	display: block;
+	content: '';
+	width: 90px;
+	height: 3px;
+	background: #373e42;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+
+.main-title-min_top {
+	margin: 0 0 50px 0;
+}
