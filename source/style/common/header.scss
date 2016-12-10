@@ -17,7 +17,7 @@
 	background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.1) 50%);
 	content: '';
 	display: block;
-	height: 50%;
+	height: 30%;
 	left: 0;
 	position: absolute;
 	top: 0;
@@ -26,7 +26,6 @@
 
 .header__top {
 	position: relative;
-	height: 36px;
 	z-index: 1;
 	padding: 0 30px;
 	margin: 0 auto;
@@ -35,7 +34,6 @@
 
 .social-icons {
 	float: left;
-	height: 35px;
 }
 
 .icons {
