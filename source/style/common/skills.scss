@@ -1,11 +1,11 @@
 .about-me {
+	display: table;
 	@include clearfix;
-	height: 819px;
 }
 
 .about-me__info {
 	width: 50%;
-	float: left;
+	display: table-cell;
 	padding: 10px;
 	background: #ebefe2;
 	height: 100%;
@@ -14,7 +14,7 @@
 
 .about-me__skills {
 	width: 50%;
-	float: right;
+	display: table-cell;
 	padding: 20px 40px 35px;
 }
 
@@ -35,63 +35,20 @@
 	top: -47px;
 }
 
-.about-me__info-title {
-	font-family: 'sansus-regular';
-	font-size: 62px;
-	line-height: 62px;
-	color: #373e42;
-	text-transform: uppercase;
-	font-weight: normal;
-	margin: 0;
-	padding: 0;
-	line-height: 40px;
-	text-align: center;
-	position: relative;
-}
-
-.about-me__info-title:after {
-	display: block;
-	content: '';
-	width: 90px;
-	height: 3px;
-	background: #373e42;
-	margin: 0 auto;
-	position: relative;
-	top: 25px;
-}
-
 .about-me__info-description {
 	width: 50%;
 	float: right;
 	padding: 10px;
 }
 
+.about-me__profile-photo-wrapper {
+	margin-bottom: 15px;
+}
+
 .about-me__profile-photo {
 	display: block;
 	width: 100%;
 	height: auto;
-}
-
-.about-me__info-description-title {
-	text-align: center;
-	color: #566358;
-	font-size: 35px;
-	line-height: 1;
-	font-family: 'sansus-regular';
-	font-weight: normal;
-	text-transform: uppercase;
-	margin-bottom: 0;
-}
-
-.about-me__info-description-title:after {
-	display: block;
-	content: '';
-	width: 90px;
-	height: 3px;
-	background: #566358;
-	margin: 0 auto;
-	position: relative;
-	top: 25px;
 }
 
 .about-me__info-description-text {
@@ -113,31 +70,8 @@
 	text-align: center;
 }
 
-.about-me__skills-title {
-	text-align: center;
-	color: #566358;
-	font-size: 35px;
-	line-height: 1;
-	font-family: 'sansus-regular';
-	font-weight: normal;
-	text-transform: uppercase;
-	margin-bottom: 70px;
-	margin-top: 0px;
-}
-
-.about-me__skills-title:after {
-	display: block;
-	content: '';
-	width: 90px;
-	height: 3px;
-	background: #566358;
-	margin: 0 auto;
-	position: relative;
-	top: 25px;
-}
-
 .about-me__skills-text {
-	margin: 0;
+	margin: 0 0 20px 0;
 	color: #566358;
 	font-family: 'roboto-regular';
 	font-size: 16px;
@@ -147,7 +81,7 @@
 	color: #566358;
 	font-size: 28px;
 	font-family: 'roboto-medium';
-	margin-bottom: 15px;
+	margin: 0 0 15px 0;
 }
 
 .about-me__skills-diagrams-frontend,
@@ -160,9 +94,13 @@
 	float: left;
 	width: 120px;
 	height: 120px;
-	margin-right: 40px;
+	margin: 0 40px 20px 0;
 	display: table;
 	position: relative;
+}
+
+.diagram:last-child {
+	margin-right: 0;
 }
 
 .diagram__name {
