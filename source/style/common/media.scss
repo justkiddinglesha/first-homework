@@ -1,0 +1,457 @@
+@media only screen and (max-width : 1800px) and (min-width : 1200px) {
+	.about-me__info {
+		padding: 0px 5% 40px 5%;
+	}
+	.about-me__info-title-wrapper {
+		width: 100%;
+		float: none;
+	}
+	.about-me__info-description {
+		width: 100%;
+		float: none;
+	}
+	.about-me__profile-photo-wrapper {
+		margin-top: 30px;
+	}
+	.main-title_top  {
+		letter-spacing: 2.2px;
+
+		&:after {
+			top: 23px;
+		}
+	}
+	.main-title-min:after {
+	    top: 12px;
+	}
+	.map__contacts .main-title-min:after {
+	    top: 24px;
+	}
+	.about-me__profile-photo-wrapper {
+	    margin-bottom: 29px;
+	}
+	.diagram__item {
+		width: 110px;
+		height: 110px;
+		margin: 0 37px 20px 0;
+	}
+	.diagram__circle {
+		width: 110px;
+		height: 110px;
+	}
+	.diagram__circle-background {
+		r: 45;
+		cx: 55; 
+		cy: 55; 
+	}
+	.diagram__circle-sector {
+	    r: 45;
+	    cx: 55;
+	    cy: 55;
+	}
+	.diagram__name {
+		font-size: 13px;
+	}
+	.about-me__skills {
+		padding-right: 10px;
+	}
+	.item {
+		margin-left: 13px;
+	}
+	.footer__navigation {
+		padding: 0 25px;
+	}
+	.about-me__skills {
+		padding: 0px 0px 35px 40px;
+	}
+	.about-me__skills-diagrams-frontend {
+		margin-top: 46px;
+	}
+	.about-me__skills-diagrams-backend {
+		margin-top: 14px;
+	}
+	.about-me__skills-diagrams-workflow {
+		margin-top: 14px;
+	}
+	.map {
+		padding-top: 234px;
+		padding-bottom: 192px;
+	}
+	.map__contacts {
+		width: 380px;
+		margin-bottom: 240px;
+		padding: 20px 40px 30px 40px;
+	}
+	.main-title-min_margin-none {
+		margin-top: 0px;
+		font-size: 35px;
+	}
+	.contacts__list {
+		margin-top: 53px;
+	}
+	.about-me__skills .main-title-min_top {
+		margin-left: -34px;
+	}
+	.quote__text {
+		margin-bottom: 8px;
+	}
+	.about-me__info-title-background {
+		top: -39px;
+	}
+	.contacts_hidden {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 1199px) and (min-width: 768px) {
+	.about-me__info-title-wrapper {
+		width: 100%;
+		float: none;
+	}
+	.about-me__info-description {
+		width: 100%;
+		float: none;
+	}
+	.about-me__profile-photo-wrapper {
+		margin-top: 30px;
+	}
+	.about-me__info,
+	.about-me__skills {
+		width: 100%;
+		float: none;
+		display: block;
+	}
+	.about-me {
+		display: block;
+	}
+	.about-me__info {
+		padding-top: 32px;
+		padding-bottom: 33px;
+		padding-left: 17%;
+		padding-right: 17%;
+	}
+	.triangle__right {
+		fill: #ebefe2;
+	}
+	.about-me__info-title-background {
+		width: 250px;
+		height: 88px;
+		margin-left: -125px;
+		top: -25%;
+	}
+	.main-title {
+		font-size: 49px;
+	}
+	.header__svg {
+		width: 738px;
+		height: 198px;
+		margin: -99px 0 0 -369px;
+	}
+	.about-me__skills {
+		padding-right: 40px;
+	}
+	.about-me__skills-text {
+    	margin: 0 15% 40px 15%;
+    	line-height: 24px;
+    }
+    .about-me__skills-diagrams {
+    	text-align: center;
+    }
+    .about-me__info-description-text {
+    	font-size: 14px;
+    }
+    .about-me__skills-text {
+    	font-size: 14px;
+    }
+    .diagram {
+    	-webkit-box-pack: center;
+    	-ms-flex-pack: center;
+    	justify-content: center;
+    	display: flex;
+    	flex-flow: row wrap;
+    }
+    .diagram__item {
+		width: 110px;
+		height: 110px;
+		margin: 0 37px 20px 0;
+	}
+	.diagram__circle {
+		width: 110px;
+		height: 110px;
+	}
+	.diagram__circle-background {
+		r: 45;
+		cx: 55; 
+		cy: 55; 
+	}
+	.diagram__circle-sector {
+	    r: 45;
+	    cx: 55;
+	    cy: 55;
+	}
+	.diagram__name {
+		font-size: 13px;
+	}
+    .footer__caption,
+    .footer__navigation {
+    	width: 50%;
+    }
+    .footer__quote {
+    	width: 100%;
+    	margin-top: 45px;
+    }
+    .item__link {
+		font-size: 14px;
+    }
+    .main-title-min {
+    	font-size: 30px;
+    	margin-top: 43px;
+    }
+    .about-me__skills {
+    	padding-top: 0;
+    }
+    .main-title-min_top {
+    	margin-bottom: 28px;
+    }
+    .about-me__skills-diagrams-title {
+    	font-size: 21px;
+    }
+    .diagram__item {
+		margin: 0 36px 20px 0;
+	}
+	.about-me__skills-diagrams-frontend {
+		margin-bottom: 22px;
+	}
+	.about-me__skills-diagrams-backend {
+		margin-bottom: 24px;
+	}
+	.footer__caption-text {
+		font-size: 14px;
+	}
+	.footer__caption,
+	.footer__navigation,
+	.footer__quote {
+		padding: 0 18px;
+	} 
+	.footer__navigation {
+		padding-left: 30px;
+	}
+	.quote__author {
+		font-size: 14px;
+	}
+	.quote__text {
+		font-size: 14px;
+	}
+	.item {
+    	margin-left: 15px;
+	}
+	.footer__copyright {
+	    font-size: 14px;
+	}
+	.map {
+		padding-top: 175px;
+		padding-bottom: 206px;
+	}
+	.map__contacts {
+		width: 350px;
+		margin-bottom: 240px;
+		padding: 20px 20px;
+	}
+	.main-title-min_margin-none {
+		margin-top: 0px;
+		font-size: 35px;
+	}
+	.contacts__list {
+		margin-top: 40px;
+	}
+	.contacts_hidden {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) and (min-width: 320px) {
+	.about-me__info-title-wrapper {
+		width: 100%;
+		float: none;
+	}
+	.about-me__info-description {
+		width: 100%;
+		float: none;
+	}
+	.about-me__info,
+	.about-me__skills {
+		width: 100%;
+		float: none;
+		display: block;
+	}
+	.about-me {
+		display: block;
+	}
+	.triangle__right {
+		fill: #ebefe2;
+	}
+	.about-me__info-title-background {
+		width: 199px;
+		height: 70px;
+		margin-left: -100px;
+		top: -13px;
+	}
+	.about-me__info .main-title.main-title_top {
+		font-size: 35px;
+	}
+	.footer__caption,
+	.footer__navigation,
+	.footer__quote {
+		width: 100%;
+		text-align: center;
+		border-right: none;
+		border-left: none;
+		border-bottom: 1px solid #5f6568;
+		padding: 20px 0;
+	}
+	.footer__top {
+		padding: 0 10px;
+	}
+	.footer__navigation .social-icons {
+		position: relative;
+		left: 50%;
+		margin-left: -75px;
+	}
+	.item {
+		margin-left: 5px;
+	}
+	.item__link {
+		font-size: 14px;
+	}
+	.map {
+		height: 864px;
+		background-position: center right;
+	}
+	.map .map__contacts {
+		display: none;
+	}
+	.contacts {
+		padding: 22px 20px 20px 20px;
+
+	}
+	.diagram {
+    	-webkit-box-pack: center;
+    	-ms-flex-pack: center;
+    	justify-content: center;
+    	display: flex;
+    	flex-flow: row wrap;
+    }
+    .diagram__item:nth-child(2) {
+    	margin-right: 0;
+    }
+    .diagram__item {
+		width: 110px;
+		height: 110px;
+		margin: 0 37px 20px 0;
+	}
+	.diagram__circle {
+		width: 110px;
+		height: 110px;
+	}
+	.diagram__circle-background {
+		r: 45;
+		cx: 55; 
+		cy: 55; 
+	}
+	.diagram__circle-sector {
+	    r: 45;
+	    cx: 55;
+	    cy: 55;
+	}
+	.diagram__name {
+		font-size: 13px;
+	}
+	.about-me__skills {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 25px;
+	}
+	.about-me__skills-diagrams {
+    	text-align: center;
+    }
+    .about-me__profile-photo-wrapper {
+	    margin-top: 26px;
+	    margin-bottom: 30px;
+	}
+	.about-me__info-description {
+		padding: 0;
+		padding-bottom: 25px;
+	}
+	.about-me__info {
+		padding: 0;
+	}
+	.about-me__info-description-text {
+		padding: 0 10px;
+	}
+	.caption__title {
+		font-size: 21px;
+	}
+	.caption__description {
+		font-size: 14px;
+	}
+	.arrow-down {
+		bottom: 50px;
+	}
+	.about-me__info .main-title.main-title_top {
+		margin-top: 8px;
+
+		&:after {
+			top: 13px;
+			width: 56px;
+		}
+	}
+	.about-me__info-title-background {
+		top: -8px;
+	}
+	.main-title-min {
+		font-size: 21px;
+
+		&:after {
+			width: 56px;
+		}
+	}
+	.about-me__skills .main-title-min_top {
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom: 24px;
+		line-height: 28px;
+	}
+	.about-me__skills-diagrams-title {
+		font-size: 21px;
+	}
+	.diagram__item {
+		margin-bottom: 30px;
+	}
+	.diagram__item:nth-child(3),
+	.diagram__item:nth-child(4) {
+		margin-bottom: 28px;
+	}
+	.contacts .main-title-min {
+		font-size: 35px;
+	}
+	.about-me__skills {
+		padding-bottom: 0;
+	}
+	.contacts__list {
+		margin-top: 30px;
+	}
+	.header__svg {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+
+}

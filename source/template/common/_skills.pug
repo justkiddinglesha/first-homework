@@ -6,7 +6,7 @@
 		.about-me__info-title-wrapper
 			svg.about-me__info-title-background(reserveAspectRatio="none")
 				use(xlink:href='assets/img/sprite.svg#about_header')
-			h1.main-title.main-title_top Обо мне
+			h1.main-title.main-title_top Обо  мне
 		.about-me__info-description
 			.about-me__profile-photo-wrapper
 				img(class='about-me__profile-photo',src='assets/img/avatar_about.jpg')
@@ -27,25 +27,28 @@
 		.about-me__skills-diagrams
 			.about-me__skills-diagrams-frontend
 				h3.about-me__skills-diagrams-title Frontend
-				each skill in frontend
-					.diagram
-						svg.diagram__circle
-							circle(r='50', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-							circle.diagram__circle-sector(r='50', cx='60', cy='60', stroke='#74a163', transform='rotate(-90 60 60)')
-						span.diagram__name #{skill}
+				.diagram
+					each skill in frontend
+						.diagram__item
+							svg.diagram__circle
+								circle.diagram__circle-background
+								circle.diagram__circle-sector
+							span.diagram__name #{skill}
 			.about-me__skills-diagrams-backend
 				h3.about-me__skills-diagrams-title Backend
-				each skill in backend
-					.diagram
-						svg.diagram__circle
-							circle(r='50', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-							circle.diagram__circle-sector(r='50', cx='60', cy='60', stroke='#74a163', transform='rotate(-90 60 60)')
-						span.diagram__name #{skill}
+				.diagram
+					each skill in backend
+						.diagram__item
+							svg.diagram__circle
+								circle.diagram__circle-background
+								circle.diagram__circle-sector
+							span.diagram__name #{skill}
 			.about-me__skills-diagrams-workflow
-				h3.about-me__skills-diagrams-title Workflow
-				each skill in workflow
-					.diagram
-						svg.diagram__circle
-							circle(r='50', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-							circle.diagram__circle-sector(r='50', cx='60', cy='60', stroke='#74a163', transform='rotate(-90 60 60)')
-						span.diagram__name #{skill}
+				h3.about-me__skills-diagrams-title WorkFlow
+				.diagram
+					each skill in workflow
+						.diagram__item
+							svg.diagram__circle
+								circle.diagram__circle-background
+								circle.diagram__circle-sector
+							span.diagram__name #{skill}
