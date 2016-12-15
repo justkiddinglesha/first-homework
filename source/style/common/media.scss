@@ -163,16 +163,15 @@
     	font-size: 14px;
     }
     .diagram {
-    	-webkit-box-pack: center;
-    	-ms-flex-pack: center;
-    	justify-content: center;
     	display: flex;
     	flex-flow: row wrap;
+    	justify-content: center;
     }
     .diagram__item {
 		width: 110px;
 		height: 110px;
 		margin: 0 37px 20px 0;
+		float: none;
 	}
 	.diagram__circle {
 		width: 110px;
@@ -338,19 +337,15 @@
 
 	}
 	.diagram {
-    	-webkit-box-pack: center;
-    	-ms-flex-pack: center;
-    	justify-content: center;
-    	display: flex;
+		display: flex;
     	flex-flow: row wrap;
-    }
-    .diagram__item:nth-child(2) {
-    	margin-right: 0;
+    	justify-content: space-around;
     }
     .diagram__item {
 		width: 110px;
 		height: 110px;
-		margin: 0 37px 20px 0;
+		margin: 0 0px 29px 0;
+		float: none;
 	}
 	.diagram__circle {
 		width: 110px;
@@ -427,13 +422,6 @@
 	.about-me__skills-diagrams-title {
 		font-size: 21px;
 	}
-	.diagram__item {
-		margin-bottom: 30px;
-	}
-	.diagram__item:nth-child(3),
-	.diagram__item:nth-child(4) {
-		margin-bottom: 28px;
-	}
 	.contacts .main-title-min {
 		font-size: 35px;
 	}
@@ -448,8 +436,8 @@
 	}
 }
 
-@media only screen and (max-width : 480px) {
-
+@media only screen and (max-width : 768px) and (min-width: 400px) {
+	
 }
 
 @media only screen and (max-width : 320px) {
