@@ -38,7 +38,9 @@
 .welcome__top-line {
 	padding: 20px 100px 20px 0;
 	z-index: 1;
-	position: relative;
+	position: absolute;
+	top: 0;
+	width: 100%;
 	@include clearfix;
 }
 
