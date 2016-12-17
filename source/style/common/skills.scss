@@ -52,15 +52,16 @@
 }
 
 .about-me__info-description-text {
-	margin-top: 50px;
+	margin-top: 25px;
 	margin-bottom: 0;
 	color: #566358;
 	font-size: 16px;
+	line-height: 24px;
 	font-family: 'roboto-regular';
 }
 
 .about-me__info-description-text:last-child {
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: 0;
 }
 
@@ -75,23 +76,24 @@
 	color: #566358;
 	font-family: 'roboto-regular';
 	font-size: 16px;
+	line-height: 24px;
 }
 
 .about-me__skills-diagrams-title {
+	font-weight: normal;
 	color: #566358;
 	font-size: 28px;
 	font-family: 'roboto-medium';
 	margin: 0 0 15px 0;
 }
 
-.about-me__skills-diagrams-frontend,
-.about-me__skills-diagrams-backend,
-.about-me__skills-diagrams-workflow {
-	@include clearfix;
+.diagram {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
-.diagram {
-	float: left;
+.diagram__item {
 	width: 120px;
 	height: 120px;
 	margin: 0 40px 20px 0;
@@ -99,7 +101,7 @@
 	position: relative;
 }
 
-.diagram:last-child {
+.diagram__item:last-child {
 	margin-right: 0;
 }
 
@@ -121,6 +123,20 @@
     position: absolute;
 }
 
+.diagram__circle-background {
+	r: 50;
+	cx: 60; 
+	cy: 60; 
+	stroke: #dfdcd5;
+	fill: none;
+}
+
 .diagram__circle-sector {
     stroke-dasharray: 250 750;
+    r: 50;
+    cx: 60;
+    cy: 60;
+    stroke: #74a163;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
 }
