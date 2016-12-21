@@ -1,11 +1,11 @@
 .portfolio
 	svg.portfolio__title-background
 		use(xlink:href='assets/img/sprite.svg#works_header')
-	h1.main-title Мои работы
+	h1.main-title.main-title_portfolio Мои работы
 	.portfolio__section
-		.info
+		.info.info_big-screen
 			.info__container
-				h3.main-title-min Сайт школы онлайн образования
+				h3.main-title-min.main-title-min_info Сайт школы онлайн образования
 				span.info__technologies html , css, javascript
 				a(href='#', class='info__link')
 					i.fa.fa-link
@@ -13,6 +13,13 @@
 		.slider
 			.slider__current-item
 				.slider__current-image
+			.info.info_small-screen
+				.info__container
+					h3.main-title-min.main-title-min_info Сайт школы онлайн образования
+					span.info__technologies html , css, javascript
+					a(href='#', class='info__link')
+						i.fa.fa-link
+						|Посмотреть сайт
 			.slider__switches
 				a(href='#' class='slider__previous-slide')
 					svg.prev-slide-arrow
