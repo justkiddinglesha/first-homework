@@ -42,6 +42,7 @@ a {
 
 .wrapper {
 	min-height: 100%;
+	width: 100%;
 	overflow: hidden;
 	position: relative;
 }
@@ -108,4 +109,227 @@ a {
 
 .main-title-min_top {
 	margin: 0 0 50px 0;
+}
+
+.hideScroll {
+	overflow: hidden;
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	background-image: url('../img/forest_prel_bg.jpg');
+	background-size: cover;
+	overflow: hidden;
+}
+
+.preloader__spinner {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.preloader__text {
+	color: #fff;
+}
+
+.preloader__animation {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.wave {
+	x: 0px;
+	y: 0px;
+	width: 80px;
+	height: 95.113px;
+	fill: #fff;
+}
+
+.first {
+  stroke-dasharray: 56 40;
+  stroke-dashoffset: 24;
+  animation: wave-first 2s linear infinite;
+}
+
+.second {
+  stroke-dasharray: 56 40;
+  stroke-dashoffset: 48;
+  animation: wave-second 2s linear infinite;
+}
+
+.third {
+  stroke-dasharray: 56 40;
+  stroke-dashoffset: 72;
+  animation: wave-third 2s linear infinite;
+}
+
+@keyframes wave-first {
+  to {
+	stroke-dashoffset: -72;
+  }
+}
+
+@keyframes wave-second {
+  to {
+	stroke-dashoffset: -48;
+  }
+}
+
+@keyframes wave-third {
+  to {
+	stroke-dashoffset: -24;
+  }
+}
+
+.navigate {
+	display: none;
+	position: relative;
+}
+
+.navigate-top {
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 30;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 6.25rem 0;
+
+	&:before {
+		left: 0;
+	}
+
+	&:after {
+		right: 0;
+	}
+}
+
+.navigate-top:before, .navigate-top:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: rgba(108, 156, 90, 0.9);
+	z-index: -1;
+}
+
+.navigate-top-animate:before {
+	animation: navanimate 0.5s ease 1 forwards;
+}
+
+.navigate-top-animate:after {
+	animation: navanimate 0.5s ease 1 forwards;
+}
+
+.navigate-top__item {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+}
+
+.navigate-top-animate .navigate-top__link {
+	-webkit-animation: linkbomp 0.25s linear 0.5s forwards;
+	animation: linkbomp 0.25s linear 0.5s forwards;
+}
+
+.navigate-top__link {
+	display: block;
+	color: #fff;
+	font-family: 'sansus-regular';
+	font-size: 63px;
+	padding: 0 4.375rem;
+	text-transform: uppercase;
+	position: relative;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+}
+
+.navigate-top__link:after {
+	content: '';
+	width: 56px;
+	height: 3px;
+	background: #fff;
+	opacity: 0;
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	visibility: hidden;
+}
+
+.navigate-top__link:hover:before, .navigate-top__link:hover:after {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.navigate-show {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 80;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 6.25rem 0;
+}
+
+@keyframes navanimate {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 50%;
+	}
+}
+
+@keyframes linkbomp {
+	0% {
+		transform: scale(0)
+	}
+	90% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
 }

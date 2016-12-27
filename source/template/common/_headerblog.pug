@@ -1,16 +1,16 @@
-- var icons = ['vk', 'github', 'in']
-header.header
+header.header.header_blog
 	canvas.Background-canvas
 	.header__top
 		.social-icons
 			ul.icons
-				each icon in icons
-					li.icons__item
-						a.icons__link
-							+svg(icon, 'icons__image icons__image_' + icon)
-		.header__menu
-			a(href='#', class='menu')
-				span.menu__image
+				- var iconsLink = [{name: 'vk', href: 'https://vk.com/sanorin'}, {name: 'github', href: 'https://github.com/justkiddinglesha'}, {name: 'in', href: 'https://www.linkedin.com/'}]
+					each icon in iconsLink
+						li.icons__item
+							a.icons__link(href= icon.href)
+								+svg(icon.name, 'icons__image_' + icon.name)
+	.header__menu
+		a(href='#', class='menu', id="togglenav")
+			span.menu__image
 	.header__info.header__info_blog
 		.avatar
 			img(src='assets/img/avatar.jpg', class='avatar__image' alt='Мой аватар')
