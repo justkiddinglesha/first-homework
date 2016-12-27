@@ -3,11 +3,10 @@ extends ../_template
 block variables
 	- var title = 'Welcome'
 block content
-	- var icons = ['vk', 'github', 'in']
 	.welcome.header
 		canvas.Background-canvas
 		.welcome__top-line
-			button(onclick='rotate()', class='welcome__login-link') Авторизоваться
+			button.welcome__login-link Авторизоваться
 		.flip-container#flip-toggle
 			.flipper
 				.front
@@ -19,14 +18,15 @@ block content
 							p.caption__description Личный сайт веб разработчика
 						.social-icons.social-icons_centered
 							ul.icons
-								each icon in icons
+								- var iconsLink = [{name: 'vk', href: 'https://vk.com/sanorin'}, {name: 'github', href: 'https://github.com/justkiddinglesha'}, {name: 'in', href: 'https://www.linkedin.com/'}]
+								each icon in iconsLink
 									li.icons__item
-										a.icons__link
-											+svg(icon, 'icons__image_dark icons__image_' + icon)
+										a.icons__link(href= icon.href)
+											+svg(icon.name, 'icons__image_dark icons__image_' + icon.name)
 						.welcome__form-links
-							a.form-link.form-link_work Мои работы
-							a.form-link.form-link_about Обо мне
-							a.form-link.form-link_blog Блог
+							- var $formLinks = {'works':'Мои работы', 'aboutme':'Обо мне', 'blog':'Блог'}
+							each $value, $key in $formLinks
+								a.form-link(class='form-link_' + $key, href=$key + '.html')= $value
 				.back
 					.login
 						form.login__form
@@ -45,12 +45,13 @@ block content
 									span.label-text
 									|Я человек
 							span.not-robot Вы точно не робот?
-							input(type='radio', class='radio', id='yes', name='radio')
-							label(for='yes', class='label-for-radio') Да
-							input(type='radio', class='radio', id='no', name='radio')
-							label(for='no', class='label-for-radio') Не уверен
+							.inputs
+								input(type='radio', class='radio', id='yes', name='radio')
+								label(for='yes', class='label-for-radio') Да
+								input(type='radio', class='radio', id='no', name='radio')
+								label(for='no', class='label-for-radio') Не уверен
 							.form-buttons
-								a.main-link(onclick='rotate()') На главную
+								a.main-link На главную
 								button(class='login-button', type='submit') Войти
 		.copyright 
 			|© Бурдюк Алексей | создано с любовью в LoftSchool | 2016

@@ -85,19 +85,18 @@
 }
 
 .header__menu {
-	float: right;
-	position: relative;
+	position: absolute;
+	top: 20px;
+	right: 20px;
 	height: 36px;
 	width: 35px;
+	z-index: 99;
 }
 
 .menu {
 	display: block;
 	width: 28px;
 	height: 28px;
-	position: absolute;
-	top: 3px;
-	right: 0px;  
 }
 
 .menu:hover .menu__image,
@@ -131,6 +130,33 @@
 	border-radius: 2px;
 }
 
+.menu-close .menu__image,
+.menu-close .menu__image:after,
+.menu-close .menu__image:before {
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+	border-radius: 2px;
+}
+
+.menu-close .menu__image {
+	height: 0;
+}
+
+.menu-close .menu__image:after {
+	transform: rotate(-45deg);
+	top: 0.9375rem;
+	transition: 0.5s;
+}
+
+.menu-close .menu__image:before {
+	transform: rotate(45deg);
+	top: 0.9375rem;
+	transition: 0.5s;
+}
+
 .header__svg {
 	width: 1176px;
 	height: 314px;
@@ -154,7 +180,7 @@
 	width: 400px;
 	top: 50%;
 	left: 50%;
-    transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 
 .avatar {

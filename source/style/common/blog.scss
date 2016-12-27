@@ -1,3 +1,7 @@
+.header_blog {
+	height: 650px;
+}
+
 .header__blog-title {
 	font-family: 'sansus-regular';
 	font-size: 62px;
@@ -55,6 +59,11 @@
 	}
 }
 
+.categories_fixed {
+	position: fixed;
+	top: 40px;
+}
+
 .categories__link {
 	color: #455a64;
 	font-family: 'roboto-regular';
@@ -64,7 +73,7 @@
 	line-height: 26px;
 }
 
-.categories__link_active {
+.categories__item.active a {
 	font-family: 'roboto-medium';
 	color: #4e8839;
 	font-size: 16px;

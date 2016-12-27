@@ -5,26 +5,74 @@
 	.portfolio__section
 		.info.info_big-screen
 			.info__container
-				h3.main-title-min.main-title-min_info Сайт школы онлайн образования
-				span.info__technologies html , css, javascript
-				a(href='#', class='info__link')
-					i.fa.fa-link
-					|Посмотреть сайт
+				ul.info__list
+					li.info__item.active
+						h3.main-title-min.main-title-min_info Сайт школы онлайн образования
+						span.info__technologies html , css, javascript
+						a(href='#', class='info__link')
+							i.fa.fa-link
+							|Посмотреть сайт
+					li.info__item
+						h3.main-title-min.main-title-min_info Сайт школы онлайн образования
+						span.info__technologies html , css, javascript
+						a(href='#', class='info__link')
+							i.fa.fa-link
+							|Посмотреть сайт
+					li.info__item
+						h3.main-title-min.main-title-min_info Сайт школы онлайн образования
+						span.info__technologies html , css, javascript
+						a(href='#', class='info__link')
+							i.fa.fa-link
+							|Посмотреть сайт
 		.slider
 			.slider__current-item
-				.slider__current-image
+				ul.current-list
+					li.current-list__item.active
+						img(src='assets/img/work-2.png' alt='')
+					li.current-list__item
+						img(src='assets/img/work-3.png' alt='')
+					li.current-list__item
+						img(src='assets/img/work-1.png' alt='')
 			.info.info_small-screen
 				.info__container
-					h3.main-title-min.main-title-min_info Сайт школы онлайн образования
-					span.info__technologies html , css, javascript
-					a(href='#', class='info__link')
-						i.fa.fa-link
-						|Посмотреть сайт
+					ul.info__list
+						li.info__item.active
+							h3.main-title-min.main-title-min_info Сайт школы онлайн образования
+							span.info__technologies html , css, javascript
+							a(href='#', class='info__link')
+								i.fa.fa-link
+								|Посмотреть сайт
+						li.info__item
+							h3.main-title-min.main-title-min_info Сайт школы онлайн образования
+							span.info__technologies html , css, javascript
+							a(href='#', class='info__link')
+								i.fa.fa-link
+								|Посмотреть сайт
+						li.info__item
+							h3.main-title-min.main-title-min_info Сайт школы онлайн образования
+							span.info__technologies html , css, javascript
+							a(href='#', class='info__link')
+								i.fa.fa-link
+								|Посмотреть сайт
 			.slider__switches
-				a(href='#' class='slider__previous-slide')
+				.slider__previous-slide.js-slider-down
+					ul.slider__list
+						li.slider__item.active
+							img(src='assets/img/work-1.png' alt='')
+						li.slider__item
+							img(src='assets/img/work-2.png' alt='')
+						li.slider__item
+							img(src='assets/img/work-3.png' alt='')
 					svg.prev-slide-arrow
 						use(xlink:href='assets/img/sprite.svg#portf_arrow_down')
-				a(href='#' class='slider__next-slide')
+				.slider__next-slide.js-slider-up
+					ul.slider__list
+						li.slider__item.active
+							img(src='assets/img/work-3.png' alt='')
+						li.slider__item
+							img(src='assets/img/work-1.png' alt='')
+						li.slider__item
+							img(src='assets/img/work-2.png' alt='')
 					svg.next-slide-arrow
 						use(xlink:href='assets/img/sprite.svg#portf_arrow_up')
 				

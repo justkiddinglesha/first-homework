@@ -332,6 +332,7 @@
 	.info_small-screen {
 		width: 100%;
 		display: block;
+		min-height: 226px;
 	}
 	.about__reviews {
 		width: 100%;
@@ -352,9 +353,6 @@
 	}
 	.slider__current-item {
 		background: #e1e4d7;
-	}
-	.info_small-screen {
-		padding: 43px 0 60px 0;
 	}
 	.info .main-title-min {
 		margin-top: 0;
@@ -435,7 +433,21 @@
 		width: 100%;
 	}
 	.sidebar {
-		display: none;
+		display: block;
+		position: fixed;
+		list-style:none;
+		padding: 10px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 290px;
+		background-color: #eee;
+		height: 100%;
+		top: 0;
+		left: -290px;
+		transition: left .2s;
+		z-index: 8;
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
 	}
 	.articles__item {
 		margin-bottom: 50px;
@@ -467,6 +479,41 @@
 	}
 	.main-title-min_login {
 		margin-top: 0;
+	}
+	.categories__link {
+		color: #fff;
+	}
+	.categories__item.active a {
+		color: #fff;
+		border-right: 3px solid #fff;
+	}
+	.js-toggle-menu {
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		position: absolute;
+		top: 50%;
+		right: -15px;
+		background: #6c9c5a;
+	}
+	.sidebar.show {
+		left: 0;
+		background: #6c9c5a;
+		box-shadow: 0.3125rem 0 0.3125rem 0 #cccccc; 
+	}
+	.navigate-top__link {
+		font-size: 49px;
+		padding: 0;
+
+		&:after {
+			width: 88px;
+			top: 60px;
+		}
+	}
+	.categories {
+		top: 50%;
+		position: relative;
+		transform: translateY(-50%);
 	}
 }
 
@@ -662,6 +709,11 @@
 		height: 254px;
 		background: #e1e4d7;
 	}
+	.info_small-screen {
+		width: 100%;
+		display: block;
+		min-height: 226px;
+	}
 	.info__container {
 		width: 100%;
 	}
@@ -780,7 +832,21 @@
 		width: 100%;
 	}
 	.sidebar {
-		display: none;
+		display: block;
+		position: fixed;
+		list-style:none;
+		padding: 10px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 290px;
+		background-color: #eee;
+		height: 100%;
+		top: 0;
+		left: -290px;
+		transition: left .2s;
+		z-index: 8;
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
 	}
 	.articles__item {
 		margin-bottom: 25px;
@@ -837,5 +903,39 @@
 	}
 	.main-title-min_login  {
 		font-size: 30px;
+	}
+	.categories__link {
+		color: #fff;
+	}
+	.categories__item.active a {
+		color: #fff;
+		border-right: 3px solid #fff;
+	}
+	.js-toggle-menu {
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		position: absolute;
+		top: 50%;
+		right: -10px;
+		background: #6c9c5a;
+	}
+	.sidebar.show {
+		left: 0;
+		background: #6c9c5a;
+		box-shadow: 0.3125rem 0 0.3125rem 0 #cccccc; 
+	}
+	.navigate-top__link {
+		font-size: 35px;
+		padding: 0;
+
+		&:after {
+			top: 60px;
+		}
+	}
+	.categories {
+		top: 50%;
+		position: relative;
+		transform: translateY(-50%);
 	}
 }
